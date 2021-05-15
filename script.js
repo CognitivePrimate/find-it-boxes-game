@@ -5,12 +5,12 @@ const it = cellNodeList[random].setAttribute("id", "it");
 const grid = document.querySelector(".grid");
 
 grid.addEventListener("click", function sewerClown(event) {
-    const green = () => event.target.style.background = "green";
-    const red = () => event.target.style.background = "red";
-    const black = () => document.body.style.background = "black";
+    const red = () => event.target.style.background = "#C44536";
+    const redder = () => event.target.style.background = "#772E25";
+    const background = () => document.body.style.background = "#283D3B";
     const remove = () => this.removeEventListener("click", sewerClown);
-    const holyTrinity = () => red() && black() && remove();
+    const holyTrinity = () => redder() && background() && remove();
     
-    event.target.id == "it" ? holyTrinity() : green();
+    event.target.id == "it" ? holyTrinity() : red();
 });
 
